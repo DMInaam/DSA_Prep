@@ -13,8 +13,6 @@ It is also the smallest numerically balanced number strictly greater than 1000.
 Note that 1022 cannot be the answer because 0 appeared more than 0 times.
  */
 
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
