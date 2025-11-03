@@ -12,14 +12,14 @@ public class minCostRmvConColor {
                 sum += t;
                 mx = Math.max(t,mx);
             }
-            if(c!=prev){
+            else{
                 time += sum-mx;
                 sum = neededTime[i];
                 mx = neededTime[i];
                 prev = c;
             }
-            if(i == n-1) time+= sum - mx;
         }
+        time+= sum - mx;
         return time;
     }
     public static void main(String[] args) {
