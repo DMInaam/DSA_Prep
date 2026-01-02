@@ -12,26 +12,16 @@ class addOne {
             }
             i--;
         }
-        if(carry == 0){
-            digits[n]++;
-            return digits;
-        }
         if(carry == n+1){
             int[] arr = new int[n+2];
             arr[0] = 1;
             for(int j=1;j<=n;j++) arr[j] = 0;
             return arr;
         }
-        i = n;
-        while(!(carry<0)){
-            if(carry == 0){ 
-                digits[i]++;
-            }
-            else{
-                digits[i] = 0;
-            }
-            carry--;
-            i--;    
+        digits[i]++;
+        i++;
+        while(i<=n){
+           digits[i++] = 0; 
         }
         return digits;
     }
