@@ -1,4 +1,4 @@
-public class tritonic {
+public class trionic {
     public static boolean isTrionic(int[] nums) {
         int n = nums.length;
         int i = 1;
