@@ -1,13 +1,15 @@
 package LinkedList;
 
 public class LNode {
-    int data;
-    LNode next;
-    LNode(int data){
+    public int data;
+    public LNode next;
+    public LNode(){
+    }
+    public LNode(int data){
         this.data = data;
         next = null;
     }
-    static LNode insertNode(LNode head,int a){
+    public static LNode insertNode(LNode head,int a){
         LNode newNode = new LNode(a);
         LNode temp = head;
         if(head == null) return newNode;
@@ -15,7 +17,7 @@ public class LNode {
         temp.next = newNode;
         return head;
     }
-    static void display(LNode head){
+    public static void display(LNode head){
         LNode temp = head;
         if(head == null) {
             System.out.println("No elements present");
