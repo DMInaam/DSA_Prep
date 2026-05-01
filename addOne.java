@@ -21,7 +21,7 @@ class addOne {
         digits[i]++;
         i++;
         while(i<=n){
-           digits[i++] = 0; 
+           digits[i++] = 0;
         }
         return digits;
     }
